@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بره الموضوع</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f2f2f2; /* Background color: light gray */
+        }
+
+        #iphone-frame {
+            background-color: white;
+            border: 16px solid #f2f2f2; /* Border color: light gray */
+            border-radius: 20px;
+            overflow: hidden;
+            width: 375px; /* iPhone app width */
+            text-align: center;
+        }
+
+        #logo {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+
+        #start-button, #settings-button {
+            display: inline-block;
+            margin: 20px;
+            padding: 15px 30px;
+            font-size: 18px;
+            text-align: center;
+            text-decoration: none;
+            background-color: #007aff; /* Button color: blue */
+            color: #fff; /* Text color: white */
+            border: none;
+            border-radius: 12px; /* Increased border-radius */
+            cursor: pointer;
+        }
+
+        #footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #555; /* Text color: dark gray */
+        }
+    </style>
+</head>
+<body>
+    <div id="iphone-frame">
+        <img id="logo" src="https://i.imgur.com/SnOWGNS.png" alt="بره الموضوع Logo">
+        <button id="start-button">بدء اللعبة</button>
+        <button id="settings-button">الإعدادات</button>
+        <div id="footer">تم التطوير بواسطة أحمد الأحيوات</div>
+    </div>
+</body>
+</html>
