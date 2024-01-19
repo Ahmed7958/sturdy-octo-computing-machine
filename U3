@@ -1,0 +1,83 @@
+<!-- game.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بره الموضوع - الحيوانات</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('https://png.pngtree.com/background/20230524/original/pngtree-painting-depicts-many-animals-in-the-jungle-picture-image_2706314.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .iphone-frame {
+            background-color: rgba(255, 255, 255, 0.8); /* Light white background */
+            border: 16px solid #f2f2f2; /* Border color: light gray */
+            border-radius: 20px;
+            overflow: hidden;
+            width: 375px; /* iPhone app width */
+            text-align: center;
+        }
+
+        .logo {
+            width: 80%; /* Reduce logo size */
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            margin: 20px;
+            padding: 15px 30px;
+            font-size: 18px;
+            text-align: center;
+            text-decoration: none;
+            background-color: #007aff; /* Button color: blue */
+            color: #fff; /* Text color: white */
+            border: none;
+            border-radius: 12px; /* Increased border-radius */
+            cursor: pointer;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #555; /* Text color: dark gray */
+        }
+    </style>
+</head>
+<body>
+    <div class="iphone-frame">
+        <img class="logo" src="https://i.imgur.com/SnOWGNS.png" alt="بره الموضوع Logo">
+        <p>خيار الحيوانات - تحت الإنشاء</p>
+        <button class="button" onclick="openDetailsPage()">التفاصيل</button>
+        <button class="button" onclick="openAddRemovePlayersPage()">الإضافة والحذف</button>
+        <button class="button" onclick="openNextPage()">التالي</button>
+        <div class="footer">تم التطوير بواسطة أحمد الأحيوات</div>
+    </div>
+
+    <script>
+        function openDetailsPage() {
+            window.location.href = 'details.html';
+        }
+
+        function openAddRemovePlayersPage() {
+            window.location.href = 'add_remove_players.html';
+        }
+
+        function openNextPage() {
+            // إضافة السلوك الذي تريده عند الضغط على زر التالي
+        }
+    </script>
+</body>
+</html>
